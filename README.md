@@ -10,4 +10,4 @@ Translation tool that utilizes LLMs such as OpenAI to perform accurate translati
 
 https://github.com/MM58-crypto/AI-Driven-translator/assets/62597737/fc93ae3b-5191-48b9-bbd9-f6fe37b075d2
 
-
+## Installation (soon)
