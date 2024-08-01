@@ -1,7 +1,7 @@
 import streamlit as st
 import whisper
-import os
-import config
+#import os
+#import config
 import openai
 from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI
@@ -11,10 +11,11 @@ from dotenv import load_dotenv, find_dotenv
 
 st.title('Multilingual Text + Audio Translation (tool)')
 load_dotenv(find_dotenv())
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key == st.secrets["OPENAI_API_KEY"] 
+#os.getenv("OPENAI_API_KEY")
 
 def generate_response(input_text):
-  llm = OpenAI(temperature=0.7, openai_api_key=config.OPENAI_API_KEY)
+  llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
   st.success(llm(input_text))
 
 #prompt template is needed for translation
